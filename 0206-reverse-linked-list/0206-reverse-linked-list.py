@@ -13,4 +13,4 @@ class Solution:
             curr.next = prev
             prev = curr
             curr = next_
-        return prev 
+        return prev
