@@ -1,4 +1,13 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
-        counts = collections.Counter(nums)
-        return max(counts.keys(), key=counts.get)
+        track = {}
+        for num in nums:
+            if num in track:
+                track[num] += 1
+            else:
+                track[num] = 1
+        for key, value in track.items():
+            if value >= len(nums) / 2:
+                return key
+
+        
