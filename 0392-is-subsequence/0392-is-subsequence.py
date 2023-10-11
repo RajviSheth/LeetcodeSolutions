@@ -6,13 +6,9 @@ class Solution:
         while first < len(s) and sec <len(t):
             if s[first] == t[sec]:
                 first += 1
-                sec += 1
-            else:
-                sec += 1
-        if first == len(s):
-            return True
-        return False
-        
+            sec += 1
+        return first == len(s)
+            
             
                 
             
