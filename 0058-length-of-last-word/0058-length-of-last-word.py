@@ -9,6 +9,12 @@ class Solution:
             counter += 1
             pointer -= 1
         return counter
-            
+        # while pointer > 0:
+        #     pointer -= 1
+        #     if s[pointer] != " ":
+        #         counter += 1
+        #     elif counter > 0:
+        #         return counter
+        # return counter
             
         
