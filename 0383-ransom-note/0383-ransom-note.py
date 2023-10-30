@@ -8,5 +8,4 @@ class Solution:
                 hashmap[s] -= 1
             else:
                 return False
-            
         return True
