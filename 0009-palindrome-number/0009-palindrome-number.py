@@ -5,12 +5,8 @@ class Solution:
         while x:
             digit = x % 10
             x = int(x/10)
-            
             res = (res * 10) + digit
-            
-        print(res)
-        print(curr)
-            
+
         if curr == res:
             return True
         
