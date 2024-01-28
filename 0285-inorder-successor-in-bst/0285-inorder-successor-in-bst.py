@@ -11,7 +11,7 @@ class Solution:
     
     def inorderSuccessor(self, root: TreeNode, p: TreeNode) -> Optional[TreeNode]:
         
-        self.previous, self.inorder_successor_node = None, None
+        # self.previous, self.inorder_successor_node = None, None
         if p.right:
             leftmost = p.right
             while leftmost.left:
