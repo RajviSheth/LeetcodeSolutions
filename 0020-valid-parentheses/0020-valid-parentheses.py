@@ -1,16 +1,20 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []
-        dict_values = {")":"(", "]":"[", "}": "{"}
-        for char in s:
-            if char in dict_values:
+        brackets = {"}":"{", ")":"(", "]":"["}
+        
+        for value in s:
+            
+            if value in brackets:
                 if stack:
                     top_element = stack.pop()
+                    if brackets[value] != top_element:
+                        return False
                 else:
-                    top_element = '#'
-                if dict_values[char] != top_element:
                     return False
             else:
-                stack.append(char)
+                stack.append(value)
+        
         return not stack
+                
         
