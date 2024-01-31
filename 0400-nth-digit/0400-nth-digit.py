@@ -10,10 +10,5 @@ class Solution:
             count *= 10
             start *= 10
         
-        
-        # n = 4
-        # n / length
-        # find out the exact number
         start += (n - 1) // length
-        # find out the exact digit
         return int(str(start)[(n - 1) % length])
