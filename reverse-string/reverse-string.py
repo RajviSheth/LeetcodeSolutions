@@ -6,12 +6,9 @@ class Solution:
         start = 0
         end = len(s) - 1
         while start < end:
-            if s[start] and s[end]:
-                # print(s[start], s[end])
-                s[start], s[end] = s[end], s[start]
-                # print(s)
-                start += 1
-                end -= 1
+            s[start], s[end] = s[end], s[start]
+            start, end = start+ 1, end-1
+                
                 
                 
             
