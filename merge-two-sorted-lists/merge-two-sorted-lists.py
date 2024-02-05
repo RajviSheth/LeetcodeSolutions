@@ -18,7 +18,7 @@ class Solution:
             l3 = l3.next
         if list1:
             l3.next = list1
-        if list2:
+        elif list2:
             l3.next = list2 
             
         return dummy.next
