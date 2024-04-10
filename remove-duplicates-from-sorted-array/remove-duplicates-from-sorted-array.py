@@ -1,6 +1,5 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        
         writer = 1
         reader = 0
         
@@ -11,6 +10,7 @@ class Solution:
                 reader += 1
             else:
                 reader += 1
-        
-        return writer
                 
+                
+        return writer
+            
