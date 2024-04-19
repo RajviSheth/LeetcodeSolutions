@@ -1,9 +1,24 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        res = 0
-        for n in nums:
-            res = n ^ res
-        return res
+        hashmap = {}
+        for idx in range(len(nums)):
+            if nums[idx] in hashmap:
+                hashmap[nums[idx]] += 1
+            else:
+                hashmap[nums[idx]] = 1
+                
+        for key,val in hashmap.items():
+            if val == 1:
+                return key
+        
+        
+        
+        # res = 0
+        # for n in nums:
+        #     res = n ^ res
+        # return res
+    
+    
 #         hashmap = {}
 #         check = set()
 #         for value in nums:
