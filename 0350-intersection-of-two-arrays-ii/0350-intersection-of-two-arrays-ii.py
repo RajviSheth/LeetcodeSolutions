@@ -5,7 +5,8 @@ class Solution:
 
         for num in nums2:
             if counts[num] > 0:
-                res += num,
+                res.append(num)
+                # res += num,
                 counts[num] -= 1
 
         return res
